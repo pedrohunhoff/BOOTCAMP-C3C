@@ -19,4 +19,5 @@ function createCounter(number){
         }
     }
     answer.innerHTML = sequence;
+    sequence.splice(0, sequence.length);
 }
