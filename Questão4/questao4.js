@@ -1,12 +1,12 @@
 let number = document.getElementById("number");
 let answer = document.getElementById("answer");
 let btnRun = document.getElementById("btnRun");
-let sequence = [];
 
 btnRun.onclick = () => createCounter(number.value);
 
 
 function createCounter(number){
+    let sequence = [];
     for(i=1; i<=number; i++){
         if(i % 5 == 0 && i % 9 == 0){
             sequence[i-1] = " LuidyMoura";
@@ -19,5 +19,4 @@ function createCounter(number){
         }
     }
     answer.innerHTML = sequence;
-    sequence.splice(0, sequence.length);
 }
